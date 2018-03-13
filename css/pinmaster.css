@@ -1,0 +1,294 @@
+/*----------- Default Setting ----------*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
+/*---------- Default ---------*/
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.eot?#iefix) format("embedded-opentype"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Bold.ttf) format("truetype"); }
+html {
+  height: 100%;
+  width: 100%; }
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+a, span {
+  font-family: 'Nanum Gothic Coding'; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  background-color: #4c4c49; }
+  #main-header .menu-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  #main-header .menu-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cb3f3f;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  #main-header .menu-btn:hover, #main-header .menu-btn:focus, #main-header .menu-btn:active {
+    color: white; }
+  #main-header .menu-btn:hover:before, #main-header .menu-btn:focus:before, #main-header .menu-btn:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1); }
+  #main-header > a {
+    height: 100%;
+    padding: 0px 25px;
+    display: block;
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    line-height: 70px;
+    text-decoration: none; }
+  #main-header > a:hover {
+    text-decoration: none; }
+  #main-header .home-btn {
+    width: 250px;
+    font-size: 21px;
+    background-color: #2f2f2f;
+    padding: 0px 5px; }
+    #main-header .home-btn > img {
+      height: 40px;
+      padding-right: 10px; }
+  #main-header .menu-btn {
+    font-size: 16px;
+    text-transform: uppercase; }
+
+/*---------- Main ----------*/
+.team_modify {
+  display: none; }
+
+.th-align {
+  text-align: center; }
+
+.blank-row {
+  font-size: 18px;
+  font-weight: bold; }
+
+#main {
+  height: 100%;
+  min-height: 1080px;
+  min-width: 880px;
+  padding: 10px; }
+  #main .content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 5px outset #9a9a9a;
+    border-radius: 13px;
+    width: 880px;
+    padding: 8px 0px;
+    background-color: #fff; }
+    #main .content .menu-box .nav-pills {
+      padding: 0px 8px; }
+      #main .content .menu-box .nav-pills > li {
+        margin-right: 10px; }
+        #main .content .menu-box .nav-pills > li > a {
+          padding: 8px 30px;
+          font-size: 15px;
+          font-family: 'Nanum Gothic';
+          letter-spacing: 1px; }
+    #main .content .content-box {
+      padding: 15px 15px 15px; }
+      #main .content .content-box > iframe {
+        padding: 0;
+        margin: 0;
+        width: 100%; }
+
+.heading-box {
+  overflow: auto; }
+  .heading-box > span {
+    display: block;
+    margin-bottom: 10px;
+    float: right; }
+
+/*---------- LEFT FUNCTION & CONTENT ----------*/
+.red {
+  color: red;
+  font-weight: bold; }
+
+.score-bold {
+  font-weight: bold;
+  font-size: 15px; }
+
+.score {
+  background-color: rgba(183, 240, 177, 0.4); }
+
+.handi {
+  background-color: rgba(255, 178, 217, 0.6); }
+
+.average {
+  background-color: rgba(92, 209, 229, 0.6); }
+
+.total {
+  background-color: rgba(255, 228, 0, 0.4); }
+
+.point-line {
+  height: 7px;
+  width: 200px;
+  margin: 40px 0px 30px 25px;
+  background: url(../image/point_line.png) no-repeat top left; }
+
+.left {
+  width: 250px; }
+
+.wrap {
+  min-height: 100%;
+  padding-top: 70px;
+  overflow: auto;
+  background-color: #2f2f2f; }
+  .wrap .header-box {
+    height: 120px;
+    background-color: #5c5c59; }
+    .wrap .header-box > div {
+      height: 100%;
+      float: left; }
+    .wrap .header-box .left-blank {
+      background-color: #424242; }
+    .wrap .header-box .title-box > span {
+      margin-left: 50px;
+      color: #fff;
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 120px; }
+    .wrap .header-box .title-box > span:hover {
+      cursor: default; }
+  .wrap .content {
+    height: calc(100% - 120px);
+    height: -webkit-calc(100% - 120px);
+    overflow: auto;
+    background-color: #2f2f2f; }
+    .wrap .content > div {
+      float: left; }
+    .wrap .content .left-menu .function-box {
+      padding: 40px 0px 0px 40px; }
+      .wrap .content .left-menu .function-box .name {
+        display: block;
+        margin: 15px 0px 8px;
+        font-size: 19px;
+        font-weight: bold;
+        color: #fff; }
+      .wrap .content .left-menu .function-box select {
+        width: 170px; }
+    .wrap .content .left-menu .button-box > a {
+      display: block;
+      width: 160px;
+      padding: 5px 0px 6px;
+      margin-bottom: 8px;
+      margin-left: 40px;
+      font-size: 22px;
+      color: #fff;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+    .wrap .content .left-menu .button-box > a:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: #cb3f3f;
+      height: 4px;
+      -webkit-transition-property: right;
+      transition-property: right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    .wrap .content .left-menu .button-box > a:hover:before, .wrap .content .left-menu .button-box > a:focus:before, .wrap .content .left-menu .button-box > a:active:before {
+      right: 0; }
+    .wrap .content .left-menu .button-box > a:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: #cfcfcf; }
+    .wrap .content .team-info, .wrap .content .player-info {
+      min-height: 500px;
+      width: -webkit-calc(100% - 250px);
+      width: calc(100% - 250px);
+      padding: 30px;
+      background-color: #4c4c49; }
+    .wrap .content .team-info .info-box {
+      width: 820px; }
+      .wrap .content .team-info .info-box .title-wrap {
+        overflow: auto; }
+        .wrap .content .team-info .info-box .title-wrap .info-title {
+          margin-bottom: 10px;
+          font-size: 22px;
+          color: #fff;
+          font-weight: bold;
+          float: left; }
+        .wrap .content .team-info .info-box .title-wrap .info-title .inning {
+          font-size: 34px;
+          margin-right: 5px;
+          color: #cb3f3f; }
+        .wrap .content .team-info .info-box .title-wrap .info-date {
+          float: right;
+          font-size: 22px;
+          color: #fff;
+          font-weight: bold;
+          line-height: 58px; }
+      .wrap .content .team-info .info-box .team-row:hover {
+        cursor: pointer;
+        background-color: #f0f0f0; }
+        .wrap .content .team-info .info-box .team-row:hover > td {
+          font-weight: bold; }
+
+/*# sourceMappingURL=pinmaster.css.map */
